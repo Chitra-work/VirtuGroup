@@ -82,17 +82,6 @@
         $scope.isEditCreateView = true;
     };
 
-    $scope.saveData = function() {
-        $http.post('/save-data', $scope.myDataObject)
-            .then(function(response) {
-
-                console.log(response.data);
-            }, function(response) {
-
-                console.log(response.data);
-            });
-    };
-
     $scope.deleteNote = function (i) {
       var r = confirm("Are you sure you want to delete this note?");
       if (r == true){

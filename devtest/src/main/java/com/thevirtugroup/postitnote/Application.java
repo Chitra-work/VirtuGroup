@@ -12,7 +12,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 /**
  */
-
 @SpringBootApplication
 @Import({MvcConfig.class, WebSecurityConfig.class})
 @ComponentScan({
