@@ -1,0 +1,28 @@
+
+<body ng-controller="loginController">
+
+<h1>Login</h1>
+
+<form name="loginForm" ng-submit="submitLoginForm()">
+
+    <label for="username">Username:</label>
+    <input type="text" name="username" ng-model="login.username" required>
+
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="text" name="password" ng-model="login.password">
+
+    <br>
+
+    <p style="color:red" ng-show="invalidCreds">Invalid credentials</p>
+
+    <div class="action-buttons">
+        <md-button ng-click="login()">
+            Login
+        </md-button>
+    </div>
+</form>
+
+
+</body>
